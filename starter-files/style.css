@@ -20,6 +20,11 @@ a {
     margin-top: 3rem;
 }
 
+.header__image {
+    max-width: 300px;
+    width: 100%;
+}
+
 .header__title {
     font-family: 'Zilla Slab', serif;
     font-weight: 500;
