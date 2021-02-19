@@ -71,6 +71,12 @@ a {
     justify-content: center;
 }
 
+.results__items {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
 .results__error {
     color: #ef0000;
 }
