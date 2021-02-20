@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Raleway:wght@300&family=Zilla+Slab:wght@500&display=swap"
+            rel="stylesheet"
+        />
+        <link rel="stylesheet" href="style.css" />
+        <title>Wikipedia | API</title>
+    </head>
+    <body>
+        <div class="container">
+            <header>
+                <img
+                    src="https://upload.wikimedia.org/wikipedia/commons/d/de/Wikipedia-logo_%28inverse%29.png"
+                    alt="Wikipedia Logo"
+                    width="300"
+                    class="header__image"
+                />
+                <h1 class="header__title">WIKIPEDIA API</h1>
+                <div class="header__search-bar">
+                    <input
+                        id="input"
+                        aria-label="What do you want to know?"
+                        type="text"
+                        class="search-bar__input"
+                        placeholder="What do you want to know?"
+                        autofocus
+                        required
+                    />
+                    <button id="submit" type="button" class="search-bar__button" aria-label="search">
+                        <!-- inline SVG search icon -->
+                        <svg
+                            version="1.1"
+                            id="Layer_1"
+                            x="0px"
+                            y="0px"
+                            width="15px"
+                            height="15px"
+                            viewBox="0 0 25 25"
+                            enable-background="new 0 0 25 25"
+                            xml:space="preserve"
+                        >
+                            <path
+                                fill="#C0C0C0"
+                                d="M23.888,21.266l-5.629-5.628c1.1-1.604,1.742-3.545,1.742-5.637C20.001,4.478,15.526,0,10,0
+                            C4.478,0,0,4.478,0,10.001S4.478,20,10,20c2.204,0,4.233-0.721,5.885-1.927l5.598,5.597c0.717,0.718,1.838,0.761,2.5,0.097
+                            C24.647,23.104,24.604,21.983,23.888,21.266z M10,16.748c-3.728,0-6.749-3.021-6.749-6.747c0-3.728,3.021-6.749,6.749-6.749c3.729,0,6.749,3.021,6.749,6.749C16.749,13.728,13.729,16.748,10,16.748z"
+                            />
+                        </svg>
+                    </button>
+                </div>
+            </header>
+        </div>
+
+        <div class="results">
+            <p id="error" class="results__error"></p>
+            <div id="results" class="results__items"></div>
+        </div>
+    </body>
+
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+    <script src="script.js"></script>
+</html>
